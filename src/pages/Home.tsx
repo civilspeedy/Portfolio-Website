@@ -12,7 +12,7 @@ export default function Home(): React.JSX.Element {
         <>
             <BrowserView>
                 <m.div id="page" initial={beforePageOpen} animate={pageOpen}>
-                    <m.h1>Charlie Slorick</m.h1>
+                    <h1>Charlie Slorick</h1>
                     <m.div initial={{ x: "100%", y: "50%" }} id="btnDiv">
                         {pages.map((item, index) => (
                             <PageButton text={item} key={index} />
