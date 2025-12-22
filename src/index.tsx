@@ -9,11 +9,11 @@ import { NotFound } from "./pages/_404.jsx";
 import "./style.css";
 import Home from "./pages/Home.js";
 import { signal } from "@preact/signals";
-import SoftwareEngineeringPage from "./pages/SE.js";
-import VideoProductionPage from "./pages/VP.js";
-import GraphicDesignPage from "./pages/GD.js";
+import SoftwareEngineeringPage from "./pages/SoftwareEngineering.js";
+import VideoProductionPage from "./pages/VideoProduction.js";
+import GraphicDesignPage from "./pages/GraphicDesign.js";
 import ThemeButton from "./components/buttons/ThemeButton.js";
-import PhotographyPage from "./pages/P.js";
+import PhotographyPage from "./pages/Photography.js";
 import MenuButton from "./components/buttons/MenuButton.js";
 import React from "preact/compat";
 import CVButton from "./components/buttons/CVButton.js";
@@ -23,6 +23,15 @@ import * as m from "motion/react-m";
 export const Theme = signal(true);
 
 const loadFeatures = () => import("motion/react").then((res) => res.domMax);
+
+function getUserTheme(): void {
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? (Theme.value = false)
+        : (Theme.value = true);
+}
+
+getUserTheme();
 
 export function App(): React.JSX.Element {
     document.body.style.backgroundColor = Theme.value ? "white" : "black";

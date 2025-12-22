@@ -3,6 +3,9 @@
     border-radius: 20px;
     width: 40%;
     gap: 30px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
 }
 
 #iconDisplay {
