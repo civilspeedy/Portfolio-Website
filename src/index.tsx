@@ -33,6 +33,16 @@ function getUserTheme(): void {
 
 getUserTheme();
 
+const LinkToComponent = {
+    "/": Home,
+    SoftwareEngineering: SoftwareEngineeringPage,
+    VideoProduction: VideoProductionPage,
+    GraphicDesign: GraphicDesignPage,
+    Photography: PhotographyPage,
+} as const;
+
+const links = Object.keys(LinkToComponent);
+
 export function App(): React.JSX.Element {
     document.body.style.backgroundColor = Theme.value ? "white" : "black";
     document.body.style.color = Theme.value ? "black" : "white";
@@ -47,11 +57,12 @@ export function App(): React.JSX.Element {
                         <MenuButton />
                     </m.div>
                     <Router>
-                        <Route path="/" component={Home} />
-                        <Route path="/SE" component={SoftwareEngineeringPage} />
-                        <Route path="/VP" component={VideoProductionPage} />
-                        <Route path="GD" component={GraphicDesignPage} />
-                        <Route path="PH" component={PhotographyPage} />
+                        {links.map((link) => (
+                            <Route
+                                path={link}
+                                component={LinkToComponent[link]}
+                            />
+                        ))}
                         <Route default component={NotFound} />
                     </Router>
                 </LazyMotion>
