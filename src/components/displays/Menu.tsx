@@ -3,8 +3,10 @@ import * as m from "motion/react-m";
 import { Theme } from "../..";
 import "./displayStyles.css";
 import { animate } from "motion";
-import { pages } from "../../logic/assetManagement";
-import LinkButton from "../buttons/LinkButton";
+import LinkButton, {
+    externalLinkNames,
+    internalLinkNames,
+} from "../buttons/LinkButton";
 
 type Props = { state: boolean };
 
@@ -25,14 +27,12 @@ export default function Menu({ state }: Props): React.JSX.Element {
                 backgroundColor: Theme.value ? "black" : "white",
             }}
         >
-            <LinkButton text="Home" />
-            {pages.map((page, index) => (
+            {internalLinkNames.map((page, index) => (
                 <LinkButton text={page} key={index} />
             ))}
-
-            <LinkButton text="Linkedin" />
-            <LinkButton text="GitHub" />
-            <LinkButton text="Email" />
+            {externalLinkNames.map((page, index) => (
+                <LinkButton text={page} key={index} />
+            ))}
         </m.div>
     );
 }

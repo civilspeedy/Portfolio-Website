@@ -131,10 +131,3 @@ export const Images = {
         Wood,
     ],
 } as const;
-
-export const pages: readonly string[] = [
-    "Software Engineering",
-    "Video Production",
-    "Graphic Design",
-    "Photography",
-];

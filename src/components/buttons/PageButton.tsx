@@ -3,13 +3,13 @@ import "./buttonStyles.css";
 import { themeSwitch } from "../../logic/styleManagement";
 import * as m from "motion/react-m";
 import { Theme } from "../..";
-import pageLinks from "../../assets/json/menuLinks.json";
+import { InternalLinks } from "./LinkButton";
 
 type Props = { text: string };
 export default function PageButton({ text }: Props): React.JSX.Element {
     return (
         <m.a
-            href={"/" + pageLinks[text]}
+            href={"/" + InternalLinks[text]}
             style={{ color: themeSwitch(!Theme.value) }}
             id="pageButton"
             whileHover={{ scale: 1.2 }}
