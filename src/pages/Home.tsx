@@ -4,8 +4,8 @@ import AboutMe from "../components/displays/AboutMe";
 import "./pageStyle.css";
 import PageButton from "../components/buttons/PageButton";
 import { beforePageOpen, pageOpen } from "../logic/animations";
-import { pages } from "../logic/assetManagement";
 import { BrowserView, MobileView } from "react-device-detect";
+import { internalLinkNames } from "../components/buttons/LinkButton";
 
 export default function Home(): React.JSX.Element {
     return (
@@ -14,7 +14,7 @@ export default function Home(): React.JSX.Element {
                 <m.div id="page" initial={beforePageOpen} animate={pageOpen}>
                     <h1>Charlie Slorick</h1>
                     <m.div initial={{ x: "100%", y: "50%" }} id="btnDiv">
-                        {pages.map((item, index) => (
+                        {internalLinkNames.map((item, index) => (
                             <PageButton text={item} key={index} />
                         ))}
                     </m.div>
@@ -28,7 +28,7 @@ export default function Home(): React.JSX.Element {
                     animate={pageOpen}
                 >
                     <m.div id="mobileHomeDiv" initial={{ y: "50%" }}>
-                        {pages.map((page, index) => (
+                        {internalLinkNames.map((page, index) => (
                             <PageButton text={page} key={index} />
                         ))}
                     </m.div>
