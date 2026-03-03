@@ -8,13 +8,14 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import { internalLinkNames } from '../components/buttons/LinkButton';
 
 export default function Home(): React.JSX.Element {
+    const pages = internalLinkNames.slice(1);
     return (
         <>
             <BrowserView>
                 <m.div id="page" initial={beforePageOpen} animate={pageOpen}>
                     <h1>Charlie Slorick</h1>
                     <m.div initial={{ x: '100%', y: '50%' }} id="btnDiv">
-                        {internalLinkNames.map((item, index) => (
+                        {pages.map((item, index) => (
                             <PageButton text={item} key={index} />
                         ))}
                     </m.div>
@@ -28,7 +29,7 @@ export default function Home(): React.JSX.Element {
                     animate={pageOpen}
                 >
                     <m.div id="mobileHomeDiv" initial={{ y: '50%' }}>
-                        {internalLinkNames.slice(1).map((page, index) => (
+                        {pages.map((page, index) => (
                             <PageButton text={page} key={index} />
                         ))}
                     </m.div>
