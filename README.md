@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-An overview of my skills and qualitifcation in a fast and minimalist webpage. Utilising modern web development technologies and practices. Compiled via Vite and deployed using Github Pages. [Link to site]([https://civilspeedy.github.io/](https://charlie-slorick-portfolio.vercel.app/).
+An overview of my skills and qualitifcation in a fast and minimalist webpage. Utilising modern web development technologies and practices. Compiled via Vite and deployed using Github Pages. [Link to site](https://charlie-slorick-portfolio.vercel.app/).
 
 ## Details skills in:
 
