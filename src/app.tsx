@@ -6,7 +6,7 @@ import { theme, toggleTheme } from './signals';
 export function App(): JSX.Element {
     return (
         <>
-            <h1>Charlie Slorick</h1>
+            <h1 class="liquid-glass-text">Charlie Slorick</h1>
             <IconButton
                 icon={theme.value ? 'moon' : 'sun'}
                 onPress={toggleTheme}

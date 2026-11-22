@@ -312,3 +312,67 @@ body {
     background-size: 200% 100%;
     animation: liquidShimmer 6s infinite linear;
 }
+
+/* =================================================================
+   Liquid Glass Text Effect
+   =================================================================== */
+
+/* =================================================================
+   Liquid Glass Text Effect
+   =================================================================== */
+
+/* =================================================================
+   Liquid Glass Text Effect
+   =================================================================== */
+
+.liquid-glass-text {
+    color: var(--text-primary);
+    background: linear-gradient(
+        135deg,
+        rgba(29, 29, 31, 1) 0%,
+        rgba(0, 113, 227, 0.85) 50%,
+        rgba(29, 29, 31, 0.9) 100%
+    );
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.12));
+    transition:
+        filter 0.3s ease,
+        transform 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .liquid-glass-text {
+        background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.7) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.1));
+    }
+}
+
+:root[data-theme="dark"] .liquid-glass-text,
+.dark .liquid-glass-text {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.7) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.1));
+}
+
+.liquid-glass-text:hover {
+    filter: drop-shadow(0 4px 16px rgba(0, 113, 227, 0.4));
+    transform: scale(1.01);
+}
