@@ -193,66 +193,6 @@ body {
    Apple UI Component Glass Primitives
    =================================================================== */
 
-/* Glass Button */
-.glass-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    background: var(--glass-bg-secondary);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--glass-border-light);
-    border-radius: 980px;
-    color: var(--text-primary);
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-    transition: all 0.25s ease;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-}
-
-.glass-button::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(255, 255, 255, 0.4) 0%,
-        transparent 70%
-    );
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-.glass-button:hover {
-    background: var(--glass-bg-primary);
-    border-color: var(--glass-highlight);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    transform: scale(1.02);
-}
-
-.glass-button:active::after {
-    opacity: 1;
-}
-
-/* Primary Liquid Button (Apple Blue Tint) */
-.glass-button-primary {
-    background: var(--apple-blue);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 16px rgba(0, 113, 227, 0.3);
-}
-
-.glass-button-primary:hover {
-    background: var(--apple-blue-hover);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 6px 24px rgba(0, 113, 227, 0.4);
-}
-
 /* Glass Input Field */
 .glass-input {
     width: 100%;
@@ -375,4 +315,9 @@ body {
 .liquid-glass-text:hover {
     filter: drop-shadow(0 4px 16px rgba(0, 113, 227, 0.4));
     transform: scale(1.01);
+}
+
+#main-heading {
+    font-size: 5em;
+    cursor: auto;
 }
