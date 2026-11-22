@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "career_history": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Job title or role name"
+                    },
+                    "company": {
+                        "type": "string",
+                        "description": "Company or organization name"
+                    },
+                    "date": {
+                        "type": "object",
+                        "properties": {
+                            "start": {
+                                "type": "string",
+                                "pattern": "^(0[1-9]|1[0-2])-\\d{4}$",
+                                "description": "Start date in MM-YYYY format"
+                            },
+                            "end": {
+                                "type": "string",
+                                "pattern": "^(0[1-9]|1[0-2])-\\d{4}$",
+                                "description": "End date in MM-YYYY format"
+                            }
+                        },
+                        "required": ["start", "end"],
+                        "additionalProperties": false
+                    },
+                    "key_skills": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of key skills used in this role"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Description of the role and responsibilities"
+                    }
+                },
+                "required": [
+                    "title",
+                    "company",
+                    "date",
+                    "key_skills",
+                    "description"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": ["career_history"],
+    "additionalProperties": false
+}
