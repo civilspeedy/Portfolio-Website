@@ -4,6 +4,7 @@
         {
             "title": "Graduate Software Engineer",
             "company": "Saab UK - Sensor Systems",
+            "logo_url": "https://images.seeklogo.com/logo-png/12/1/saab-my2001-logo-png_seeklogo-121164.png",
             "date": {
                 "start": "09-2026",
                 "end": "09-2028"
@@ -22,6 +23,7 @@
         {
             "title": "Junior Information Secruity Engineer",
             "company": "InfoSum Ltd",
+            "logo_url": "https://d53bpfpeyyyn7.cloudfront.net/Pictures/180x180fit/P/Pictures%2Fweb%2Fk%2Fs%2Fi%2FInfosum-logo-USE.png",
             "date": {
                 "start": "09-2026",
                 "end": "09-2026"
@@ -36,7 +38,30 @@
                 "Gitlab",
                 "Jira"
             ],
-            "description": ""
+            "description": "I supported ISO 27001, SOC 2, and Cyber Essentials certification efforts while maintaining security posture using Wiz, Google SecOps, Tenable Nessus and Snyk. I conducted audits across AWS, GCP, platforms, endpoints, applications, and firewalls. Performed code inspections, and collaborated with developers in Golang, TypeScript, and Node.js environments."
+        },
+        {
+            "title": "Data Centre Sales Specialist",
+            "company": "Softcat PLC",
+            "logo_url": "https://www.softcat.com/2008x460/9017/4404/2194/Softcat_new_logo.png?fit=1",
+            "date": {
+                "start": "11-2024",
+                "end": "06-2025"
+            },
+            "key_skills": [
+                "Office 365",
+                "Storage",
+                "Cloud Storage",
+                "NAS",
+                "Private Cloud",
+                "Sales Prospecting",
+                "SAN",
+                "Cloud Computing",
+                "Customer Service",
+                "Backup Solutions",
+                "Hypervisors"
+            ],
+            "description": "I engaged customers on datacentre challenges, leveraging partner portfolios (Nvidia, VMWare, HPE, Dell, VAST Data) to design solutions. My responsibilities included requirement gathering, technical demos, build configurations, and quote creation. I worked with containerization, Kubernetes, hypervisors, hyper-converged infrastructure, governance, and disaster recovery technologies."
         }
     ]
 }

@@ -18,6 +18,10 @@
                         "type": "string",
                         "description": "Company or organization name"
                     },
+                    "logo_url": {
+                        "type": "string",
+                        "description": "url link to company logo"
+                    },
                     "date": {
                         "type": "object",
                         "properties": {
@@ -50,6 +54,7 @@
                 "required": [
                     "title",
                     "company",
+                    "logo_url",
                     "date",
                     "key_skills",
                     "description"

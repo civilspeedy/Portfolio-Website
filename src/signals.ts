@@ -1,4 +1,6 @@
 import { Signal, signal } from '@preact/signals';
+import Home from './Pages/Home';
+import CareerHistory from './Pages/CareerHistory';
 
 /**
  * Signal for representing theme state. `false` is dark, `true` is light.
@@ -33,4 +35,15 @@ const updateCSS = (): void => {
     root.setAttribute(THEME_ATTR, themeValue);
     root.classList.remove('dark', 'light');
     root.classList.add(themeValue);
+};
+
+export const page = signal(Home());
+
+const pageMap = {
+    Home: Home(),
+    'Career History': CareerHistory(),
+};
+
+export const setPage = (pageName: string): void => {
+    page.value = pageMap[pageName];
 };
