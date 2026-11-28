@@ -1,8 +1,9 @@
 import type { JSX } from 'preact/jsx-runtime';
-import IconButton from '../components/IconButton';
 import { setPage, theme, toggleTheme } from '../signals';
-import TextButton from '../components/TextButton';
+
 import content from '../assets/json/content.json';
+import IconButton from '../components/buttons/IconButton';
+import TextButton from '../components/buttons/TextButton';
 
 export default function Home(): JSX.Element {
     return (

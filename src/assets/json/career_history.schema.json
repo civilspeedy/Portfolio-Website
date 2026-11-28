@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "properties": {
         "$schema": {
@@ -17,6 +16,10 @@
                     "company": {
                         "type": "string",
                         "description": "Company or organization name"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "company website url"
                     },
                     "logo_url": {
                         "type": "string",
@@ -54,6 +57,7 @@
                 "required": [
                     "title",
                     "company",
+                    "url",
                     "logo_url",
                     "date",
                     "key_skills",

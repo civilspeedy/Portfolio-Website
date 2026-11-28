@@ -1,6 +1,6 @@
 import type { JSX } from 'preact/jsx-runtime';
 import './button.css';
-import '../index.css';
+import '../../index.css';
 
 type props = { readonly text: string; onClick: () => void };
 export default function TextButton({ text, onClick }: props): JSX.Element {

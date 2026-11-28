@@ -4,6 +4,7 @@
         {
             "title": "Graduate Software Engineer",
             "company": "Saab UK - Sensor Systems",
+            "url": "https://www.saab.com/markets/united-kingdom",
             "logo_url": "https://images.seeklogo.com/logo-png/12/1/saab-my2001-logo-png_seeklogo-121164.png",
             "date": {
                 "start": "09-2026",
@@ -23,9 +24,10 @@
         {
             "title": "Junior Information Secruity Engineer",
             "company": "InfoSum Ltd",
+            "url": "https://www.infosum.com/",
             "logo_url": "https://d53bpfpeyyyn7.cloudfront.net/Pictures/180x180fit/P/Pictures%2Fweb%2Fk%2Fs%2Fi%2FInfosum-logo-USE.png",
             "date": {
-                "start": "09-2026",
+                "start": "03-2026",
                 "end": "09-2026"
             },
             "key_skills": [
@@ -43,6 +45,7 @@
         {
             "title": "Data Centre Sales Specialist",
             "company": "Softcat PLC",
+            "url": "https://www.softcat.com/",
             "logo_url": "https://www.softcat.com/2008x460/9017/4404/2194/Softcat_new_logo.png?fit=1",
             "date": {
                 "start": "11-2024",
